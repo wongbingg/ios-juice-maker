@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF3BF4FA28FE3E9200275ACD /* FruitStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3BF4F928FE3E9200275ACD /* FruitStoreViewController.swift */; };
 		AF61162428166E8B008D02EB /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF61162328166E8B008D02EB /* Fruit.swift */; };
 		AF8CCFC328FD7133000C450C /* FruitStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CCFC228FD7133000C450C /* FruitStore.swift */; };
 		AF8CCFC528FD7193000C450C /* BeverageMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CCFC428FD7193000C450C /* BeverageMaker.swift */; };
@@ -18,7 +19,7 @@
 		AF8CCFE028FD8246000C450C /* FruitStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CCFDF28FD8246000C450C /* FruitStoreError.swift */; };
 		C73DAF37255D0CDD00020D38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73DAF36255D0CDD00020D38 /* AppDelegate.swift */; };
 		C73DAF39255D0CDD00020D38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73DAF38255D0CDD00020D38 /* SceneDelegate.swift */; };
-		C73DAF3B255D0CDD00020D38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73DAF3A255D0CDD00020D38 /* ViewController.swift */; };
+		C73DAF3B255D0CDD00020D38 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73DAF3A255D0CDD00020D38 /* OrderViewController.swift */; };
 		C73DAF3E255D0CDD00020D38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73DAF3C255D0CDD00020D38 /* Main.storyboard */; };
 		C73DAF40255D0CDE00020D38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73DAF3F255D0CDE00020D38 /* Assets.xcassets */; };
 		C73DAF43255D0CDF00020D38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73DAF41255D0CDF00020D38 /* LaunchScreen.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF3BF4F928FE3E9200275ACD /* FruitStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitStoreViewController.swift; sourceTree = "<group>"; };
 		AF61162328166E8B008D02EB /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		AF8CCFC228FD7133000C450C /* FruitStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitStore.swift; sourceTree = "<group>"; };
 		AF8CCFC428FD7193000C450C /* BeverageMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageMaker.swift; sourceTree = "<group>"; };
@@ -48,7 +50,7 @@
 		C73DAF33255D0CDD00020D38 /* JuiceMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuiceMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73DAF36255D0CDD00020D38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C73DAF38255D0CDD00020D38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C73DAF3A255D0CDD00020D38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C73DAF3A255D0CDD00020D38 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		C73DAF3D255D0CDD00020D38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C73DAF3F255D0CDE00020D38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C73DAF42255D0CDF00020D38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -120,6 +122,8 @@
 		AF8CCFE128FD88A8000C450C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AF8CCFDA28FD7B2D000C450C /* FruitStore */,
+				AF8CCFD928FD7B21000C450C /* BeverageMaker */,
 				AF61162328166E8B008D02EB /* Fruit.swift */,
 				AF8CCFC628FD71DF000C450C /* Beverage.swift */,
 			);
@@ -173,10 +177,9 @@
 			children = (
 				C73DAF36255D0CDD00020D38 /* AppDelegate.swift */,
 				C73DAF38255D0CDD00020D38 /* SceneDelegate.swift */,
-				C73DAF3A255D0CDD00020D38 /* ViewController.swift */,
+				C73DAF3A255D0CDD00020D38 /* OrderViewController.swift */,
+				AF3BF4F928FE3E9200275ACD /* FruitStoreViewController.swift */,
 				AF8CCFE128FD88A8000C450C /* Model */,
-				AF8CCFDA28FD7B2D000C450C /* FruitStore */,
-				AF8CCFD928FD7B21000C450C /* BeverageMaker */,
 				C73DAF3C255D0CDD00020D38 /* Main.storyboard */,
 				C73DAF3F255D0CDE00020D38 /* Assets.xcassets */,
 				C73DAF41255D0CDF00020D38 /* LaunchScreen.storyboard */,
@@ -297,9 +300,10 @@
 				AF61162428166E8B008D02EB /* Fruit.swift in Sources */,
 				AF8CCFE028FD8246000C450C /* FruitStoreError.swift in Sources */,
 				AF8CCFC528FD7193000C450C /* BeverageMaker.swift in Sources */,
+				AF3BF4FA28FE3E9200275ACD /* FruitStoreViewController.swift in Sources */,
 				AF8CCFC728FD71DF000C450C /* Beverage.swift in Sources */,
 				AF8CCFC928FD7248000C450C /* FruitStoreImp.swift in Sources */,
-				C73DAF3B255D0CDD00020D38 /* ViewController.swift in Sources */,
+				C73DAF3B255D0CDD00020D38 /* OrderViewController.swift in Sources */,
 				C73DAF37255D0CDD00020D38 /* AppDelegate.swift in Sources */,
 				C73DAF39255D0CDD00020D38 /* SceneDelegate.swift in Sources */,
 				AF8CCFD828FD7733000C450C /* BeverageMakerImp.swift in Sources */,
