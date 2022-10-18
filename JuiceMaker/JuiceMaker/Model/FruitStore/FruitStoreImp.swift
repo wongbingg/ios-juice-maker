@@ -5,8 +5,13 @@
 //  Created by 이원빈 on 2022/10/17.
 //
 
-final class FruitStoreImp: FruitStroe {
-    private var storage: [Fruit: Int]
+final class FruitStoreImp: FruitStore {
+    private var storage: [Fruit: Int] {
+        didSet {
+            didChangedStorage.forEach { $0?() }
+        }
+    }
+    var didChangedStorage: [(() -> Void)?] = []
     
     init() {
         storage = [

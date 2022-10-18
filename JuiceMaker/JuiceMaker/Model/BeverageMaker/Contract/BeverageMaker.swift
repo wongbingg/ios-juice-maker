@@ -6,6 +6,6 @@
 //
 
 protocol BeverageMaker {
-    var fruitStore: FruitStroe { get }
-    func make(baverage: Beverage) throws
+    var fruitStore: FruitStore { get }
+    func make(baverage: Beverage)
 }
