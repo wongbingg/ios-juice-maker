@@ -75,6 +75,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF42750628FEDEF6001CF0DC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C73DAF3A255D0CDD00020D38 /* OrderViewController.swift */,
+				AF3BF4F928FE3E9200275ACD /* FruitStoreViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		AF8CCFCF28FD751B000C450C /* JuiceMakerTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				AF8CCFE228FD88BF000C450C /* Contract */,
+				AF8CCFC628FD71DF000C450C /* Beverage.swift */,
 				AF8CCFD728FD7733000C450C /* BeverageMakerImp.swift */,
 			);
 			path = BeverageMaker;
@@ -98,6 +108,7 @@
 			children = (
 				AF8CCFE328FD88CA000C450C /* Contract */,
 				AF8CCFE428FD88D8000C450C /* Error */,
+				AF61162328166E8B008D02EB /* Fruit.swift */,
 				AF8CCFC828FD7248000C450C /* FruitStoreImp.swift */,
 			);
 			path = FruitStore;
@@ -124,8 +135,6 @@
 			children = (
 				AF8CCFDA28FD7B2D000C450C /* FruitStore */,
 				AF8CCFD928FD7B21000C450C /* BeverageMaker */,
-				AF61162328166E8B008D02EB /* Fruit.swift */,
-				AF8CCFC628FD71DF000C450C /* Beverage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,8 +186,7 @@
 			children = (
 				C73DAF36255D0CDD00020D38 /* AppDelegate.swift */,
 				C73DAF38255D0CDD00020D38 /* SceneDelegate.swift */,
-				C73DAF3A255D0CDD00020D38 /* OrderViewController.swift */,
-				AF3BF4F928FE3E9200275ACD /* FruitStoreViewController.swift */,
+				AF42750628FEDEF6001CF0DC /* Controller */,
 				AF8CCFE128FD88A8000C450C /* Model */,
 				C73DAF3C255D0CDD00020D38 /* Main.storyboard */,
 				C73DAF3F255D0CDE00020D38 /* Assets.xcassets */,

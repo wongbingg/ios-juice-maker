@@ -17,6 +17,7 @@ final class OrderViewController: UIViewController {
         setupBeverageMaker()
         setCountLabel()
         bindCountLabel()
+        bindNoStockError()
     }
     
     private func setupBeverageMaker() {
@@ -39,6 +40,27 @@ final class OrderViewController: UIViewController {
         fruitStore.didChangedStorage.append {
             self.setCountLabel()
         }
+    }
+    
+    private func bindNoStockError() {
+        beverageMaker?.noStockError = {
+            self.showWarningAlert()
+        }
+    }
+    
+    private func showWarningAlert() {
+        let alertController = UIAlertController(
+            title: "재고부족",
+            message: "재고가 부족합니다. 창고로 이동할까요?",
+            preferredStyle: .alert
+        )
+        let yesAction = UIAlertAction(title: "예", style: .default) { action in
+            self.performSegue(withIdentifier: "goToFruitStore", sender: nil)
+        }
+        let cancelAction = UIAlertAction(title: "아니오", style: .destructive)
+        alertController.addAction(yesAction)
+        alertController.addAction(cancelAction)
+        present(alertController, animated: true)
     }
     
     @IBAction func OrderButtonDidTapped(_ sender: UIButton) {

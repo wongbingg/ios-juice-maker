@@ -7,5 +7,7 @@
 
 protocol BeverageMaker {
     var fruitStore: FruitStore { get }
+    var noStockError: (() -> Void)? { get set }
+    
     func make(baverage: Beverage)
 }

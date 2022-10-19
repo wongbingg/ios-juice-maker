@@ -7,7 +7,7 @@
 
 struct BeverageMakerImp: BeverageMaker {
     private(set) var fruitStore: FruitStore
-    
+    var noStockError: (() -> Void)?
     init(fruitStore: FruitStore) {
         self.fruitStore = fruitStore
     }
@@ -25,6 +25,7 @@ struct BeverageMakerImp: BeverageMaker {
             switch error {
             case FruitStoreError.noStock:
                 print("재고량이 부족합니다")
+                noStockError?()
             default:
                 print(error.localizedDescription)
             }
